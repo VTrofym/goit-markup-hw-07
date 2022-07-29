@@ -41,11 +41,12 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    &:hover {
+        fill: var(--font-сolor-blue);
+    }
 }
 
-.modal-button:hover {
-    fill: var(--font-сolor-blue);
-}
+
 
 .modal-data-person {
     font-weight: 700;
@@ -84,16 +85,17 @@
     position: relative;
 }
 
-.modal__field--input:hover+.modal__field--icon,
-.modal__field--input:focus+.modal__field--icon {
-    fill: var(--font-сolor-blue);
-}
+
 
 .modal__field--icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    .modal__field--input:hover + &,
+    .modal__field--input:focus + & {
+        fill: var(--font-сolor-blue);
+    }
 }
 
 .modal__field--input {
@@ -103,17 +105,15 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
+    &:hover {
+        border: 1px solid var(--font-сolor-blue);
+        border-radius: 4px;
+    }
 }
 
 .modal__field--check-text {
     display: flex;
     align-items: center;
-}
-
-.modal__field--input:hover {
-    border: 1px solid var(--font-сolor-blue);
-    border-radius: 4px;
 }
 
 .modal__field--comments {
@@ -128,15 +128,14 @@
 
     color: rgba(117, 117, 117, 0.5);
     resize: none;
-}
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
 
-.modal__field--comments::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .modal__field--agreement {

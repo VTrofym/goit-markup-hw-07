@@ -22,11 +22,7 @@
     justify-content: space-between;
 }
 
-.clients__link:hover .clients__link--company,
-.clients__link:focus .clients__link--company {
-    fill: var(--font-сolor-blue);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .clients__link {
     color: #AFB1B8;
@@ -37,16 +33,21 @@
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+    }
 }
 
-.clients__link:hover,
-.clients__link:focus {
-    border: 1px solid #2196F3;
 
-}
 
 .clients__link--company {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--font-сolor-blue);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }

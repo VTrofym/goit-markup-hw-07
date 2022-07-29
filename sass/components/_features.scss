@@ -11,6 +11,9 @@
 .features__bloc {
     width: 300px;
     margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .features__bloc--icon {
@@ -21,10 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.features__bloc:last-child {
-    margin-right: 0;
 }
 
 .features__title,
