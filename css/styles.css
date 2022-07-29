@@ -68,23 +68,7 @@ button {
     margin: -1px;
 }
 
-:root {
-    --background-button-main: #188CE8;
-    --background-color-white: #FFFFFF;
-    --background-color-black: #2F303A;
-    --background-color-grey: #F5F4FA;
-    --background-color-blue: #2196F3;
-    --font-сolor-blue: #2196F3;
-    --font-сolor-black-logo: #000000;
-    --font-сolor-white: #FFFFFF;
-    --font-сolor-black-p: #757575;
-    --font-сolor-black-other: #212121;
-    --font-color-border: #ECECEC;
-    --font-color-footer-mail-tel: rgba(255, 255, 255, 0.6);
-    --letter-spacing-s: 0.02em;
-    --letter-spacing-m: 0.03em;
-    --letter-spacing-l: 0.06em;
-}
+
 
 .button-main {
     text-align: center;
@@ -120,22 +104,11 @@ button {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
 }
 
 /*---------- Header-------------- */
 
-.header > .container {
-    outline: 1px solid tomato;
 
-    display: flex;
-    align-items: center;
-    height: 80px;
-}
-
-.header__border {
-    border-bottom: 1px solid var(--font-color-border);
-}
 
 /* ---------Logo------------ */
 
@@ -319,8 +292,6 @@ button {
     min-height: 600px;
     background-position: center;
     background-repeat: no-repeat;
-
-    outline: 1px solid tomato;
 }
 
 .section-title__hero {
@@ -529,8 +500,6 @@ button {
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-
-    outline: 1px solid tomato;
 }
 
 .features__list {
@@ -546,7 +515,6 @@ button {
 .features__bloc--icon {
     margin-bottom: 30px;
     height: 120px;
-    outline: 1px solid tomato;
     border-radius: 4px;
     background-color: var(--background-color-grey);
     display: flex;
@@ -589,8 +557,6 @@ button {
 /* виды работ */
 
 .work {
-    outline: 1px solid tomato;
-
     padding-bottom: 94px;
 }
 
@@ -640,8 +606,6 @@ button {
     background-color: var(--background-color-grey);
     padding-top: 94px;
     padding-bottom: 94px;
-
-    outline: 1px solid tomato;
 }
 
 .team__list {
@@ -789,8 +753,6 @@ fill: var(--font-сolor-white);
 
 .footer {
     background-color: var(--background-color-black);
-
-    outline: 1px solid tomato;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -947,9 +909,6 @@ fill: var(--font-сolor-white);
 /* ------------Portfolio.html ---------------*/
 
 .portfolio {
-    outline: 1px solid tomato;
-
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 
