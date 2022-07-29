@@ -81,7 +81,7 @@ button {
   padding-right: 15px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   height: 81px;
