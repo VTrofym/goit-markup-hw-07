@@ -35,12 +35,17 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="burger" type="button">
+                <svg class="burger__icon" width="24px" height="16px">
+                    <use href="./images/svg/sprite.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </div>
     </header>
 <!----------- main --------------->
     <main>
             <!--Блок Заголовок-->
-        <section class="section-title">
+        <section class="section-title container">
             <h1 class="section-title__hero">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button data-modal-open class="button-main" type="button">Заказать услугу</button>
             <div data-modal class="backdrop is-hidden">
@@ -168,7 +173,7 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__bloc">
-                        <img src="./images/main-jpg-squoosh/img-1.jpg" alt="чел в бордовой рубашке" width="270">
+                        <img class="team__img" src="./images/main-jpg-squoosh/img-1.jpg" alt="чел в бордовой рубашке" width="270">
                         <div class="team__description">
                             <h3 class="team__bloc--name">Игорь Демьяненко</h3>
                             <p class="team__bloc--speciality">Product Designer</p>
@@ -205,7 +210,7 @@
                         </ul>
                     </li>
                     <li class="team__bloc">
-                        <img src="./images/main-jpg-squoosh/img-2-2.jpg" alt="блондинка с веснушками" width="270">
+                        <img class="team__img"  src="./images/main-jpg-squoosh/img-2-2.jpg" alt="блондинка с веснушками" width="270">
                         <div class="team__description">
                             <h3 class="team__bloc--name">Ольга Репина</h3>
                             <p class="team__bloc--speciality">Frontend Developer</p>
@@ -242,7 +247,7 @@
                         </ul>
                     </li>
                     <li class="team__bloc">
-                        <img src="./images/main-jpg-squoosh/img-3-2.jpg" alt="чел в голубой рубашке" width="270">
+                        <img class="team__img"  src="./images/main-jpg-squoosh/img-3-2.jpg" alt="чел в голубой рубашке" width="270">
                         <div class="team__description">
                             <h3 class="team__bloc--name">Николай Тарасов</h3>
                             <p class="team__bloc--speciality">Marketing</p>
@@ -279,7 +284,7 @@
                         </ul>
                     </li>
                     <li class="team__bloc">
-                        <img src="./images/main-jpg-squoosh/img-4-2.jpg" alt="чел в черной футболке" width="270">
+                        <img class="team__img"  src="./images/main-jpg-squoosh/img-4-2.jpg" alt="чел в черной футболке" width="270">
                         <div class="team__description">
                         <h3 class="team__bloc--name">Михаил Ермаков</h3>
                         <p class="team__bloc--speciality">UI Designer</p>
@@ -321,9 +326,9 @@
 <!-------- Постоянные клиенты --------->
         <section class="clients">
             <div class="container clients__container">
-                <h2 class="lients__main">Постоянные клиенты</h2>
+                <h2 class="clients__main">Постоянные клиенты</h2>
                 <ul  class="clients__list">
-                    <li>
+                    <li class="clients__block">
                         <a href="#" rel="noopener noreferrer nofollow" class="clients__link">
                             <svg width="41px" height="47" class="clients__link--company">
                                 <use href="./images/svg/sprite.svg#icon-group-1">
@@ -331,7 +336,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__block">
                         <a href="#" rel="noopener noreferrer nofollow" class="clients__link">
                             <svg  width="40px" height="52" class="clients__link--company">
                                 <use href="./images/svg/sprite.svg#icon-group-2">
@@ -339,28 +344,28 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
+                    <li class="clients__block"><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
                                 <svg width="44px" height="41" class="clients__link--company">
                                     <use href="./images/svg/sprite.svg#icon-group-3">
                                     </use>
                                 </svg>
                             </a>
                     </li>
-                    <li><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
+                    <li class="clients__block"><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
                                 <svg width="84px" height="41" class="clients__link--company">
                                     <use href="./images/svg/sprite.svg#icon-group-4">
                                     </use>
                                 </svg>
                             </a>
                     </li>
-                    <li><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
+                    <li class="clients__block"><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
                                 <svg width="63px" height="45" class="clients__link--company">
                                     <use href="./images/svg/sprite.svg#icon-group-5">
                                     </use>
                                 </svg>
                             </a>
                     </li>
-                    <li><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
+                    <li class="clients__block"><a href="#" rel="noopener noreferrer nofollow" class="clients__link">
                                 <svg width="94px" height="44" class="clients__link--company">
                                     <use class="eee" href="./images/svg/sprite.svg#icon-group-6">
                                     </use>

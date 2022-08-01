@@ -1,13 +1,23 @@
 .portfolio__button {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-top: 0;
     padding-left: 0;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
 
 .portfolio__bloc {
     margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .portfolio__button--all:hover,

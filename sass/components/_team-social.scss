@@ -1,9 +1,13 @@
 .team__soc--bloc {
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
+    justify-content: center;
+    gap: 10px;
+
+    @media screen and (min-width:1200px) {
+        justify-content: space-between;
+        padding: 0px 32px;
+    }
 }
 
 .team__soc--link {

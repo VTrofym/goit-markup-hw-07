@@ -14,13 +14,22 @@
 }
 
 .section-title__hero {
-    max-width: 696px;
     color: var(--font-сolor-white);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: var(--letter-spacing-l);
 
     margin: 0 auto;
+    padding: 0px 60px;
 
+    @media screen and (min-width: 768px) {
+        padding: 0px 204px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-height: 600px;
+    }
 }

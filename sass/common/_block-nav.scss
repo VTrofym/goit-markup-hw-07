@@ -1,3 +1,13 @@
+.block-nav {
+    margin-left: 93px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+    }
+}
+
 .block-nav__main {
     position: relative;
     &::after {
@@ -30,11 +40,6 @@
     
         margin-top: 28px;
         }
-}
-
-
-.block-nav {
-    margin-left: 93px;
 }
 
 .block-nav__studiya,
@@ -83,17 +88,33 @@
 .contact {
     color: var(--font-сolor-black-p);
     margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
-.contact__call--tel {
-    margin-left: 30px;
-    padding-bottom: 32px;
-    padding-top: 32px;
+.contact__call {
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
 }
 
 .contact__feedback {
-    padding-bottom: 32px;
-    padding-top: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0px;
+    }
 }
 
 .contact__feedback--mail,
@@ -129,4 +150,23 @@
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+
+
+
+.burger {
+
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+}
+
+.burger__icon {
+    fill: #000000;
+}
+
+.burger:hover .burger__icon,
+.burger:hover .burger__icon {
+    fill: #2196F3;
 }
